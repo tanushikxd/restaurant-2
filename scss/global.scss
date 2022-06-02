@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@mixin Header2() {
+    color: $green;
+    font-size: 36px;
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 600;
+    line-height: 43px;
+}
+@mixin header2() {
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 500px;
+    line-height: 43px;
+    color: $grayHeader;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    color: $gray;
+    &:focus, &:active{
+        outline: none;
+    }
+}
