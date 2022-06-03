@@ -42,6 +42,12 @@ header {
   background-color: #252525;
   opacity: 0.75;
   margin-bottom: 45px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-size: cover;
 }
 
 .header-wrapper {
@@ -72,4 +78,100 @@ header {
 }
 .nav-items_item-link:hover, .nav-items_item-link:focus {
   color: #34C759;
+}
+
+.main {
+  background-image: url(../assets/images/main.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  padding: 130px 0 185px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.main-wrapper_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  border: 1px solid transparent;
+  background-color: #252525;
+  padding: 9px 10px;
+  opacity: 0.7;
+  width: 48px;
+  -webkit-transform: translateY(-140%);
+          transform: translateY(-140%);
+}
+
+.main-wrapper_side:hover, .main-wrapper_side:focus {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.main-wrapper_title {
+  font-family: "Alegreya" sans-serif;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 72px;
+  padding: 0 170px 0 170px;
+  text-align: center;
+  color: white;
+  margin-bottom: 28px;
+}
+
+.main-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 143px;
+  text-align: center;
+}
+.main-cards_card-link_icon {
+  margin-bottom: 16px;
+}
+.main-cards_card-link_icon:hover, .main-cards_card-link_icon:focus {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+.main-cards_card-link_icon-text {
+  margin-bottom: 4px;
+  font-family: "Alegreya" sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.main-cards_card-link_icon-text_desc {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Montserrat" sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
 }
