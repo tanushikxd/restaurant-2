@@ -200,6 +200,7 @@ header{
     opacity: .75;
     width: 100%;
     height: 554px;
+    margin-bottom: 80px;
     &-wrapper{
         max-width: 100%;
         display: flex;
@@ -257,5 +258,119 @@ header{
     &:hover, &:focus{
         cursor: pointer;
         fill: $green;
+    }
+}
+
+.deserts{
+    margin-bottom: 80px;
+    &-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &_title{
+            @include header3;
+            margin-bottom: 82px;
+            position: relative;
+            &::after{
+                content: '';
+                width: 60px;
+                height: 2px;
+                background-color: $green;
+                position: absolute;
+                left: 40%;
+                transform: translateY(70px);
+
+            }
+            &-cards{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 30px;
+                row-gap: 40px;
+                justify-content: center;
+                &_card{
+                    border: $cardsBG 1px solid;
+                    min-height: 437px;
+                    &-img{
+                        margin-bottom: 26px;
+                        &_name{
+                            margin-bottom: 20px;
+                            color: $white;
+                            padding-left: 20px;
+                            &-desc{
+                                margin-bottom: 24px;
+                                color: $cardsgray ;
+                                padding-left: 20px;
+                                &_price{
+                                    color: $green;
+                                    font-size: 24px;
+                                    line-height: 33px;
+                                    font-weight: 600;
+                                    margin-right: 179px;
+                                    padding-left: 20px;
+                                    &-btn{
+                                        text-transform: uppercase;
+                                        padding: 10px 19px;
+                                        background-color: $green;
+                                        border-radius: 100px;
+                                        &:hover, &:focus{
+                                            opacity: .75;
+                                        }
+                                        &_link{
+                                            color: $bodydark;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.reviews{
+    &-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &_title{
+            @include header3;
+            margin-bottom: 62px;
+            position: relative;
+            &::after{
+                content: '';
+                width: 60px;
+                height: 2px;
+                background-color: $green;
+                position: absolute;
+                left: 30%;
+                transform: translateY(60px);
+            }
+            &-review{
+                display: grid;
+                grid-template-columns: repeat(3, 380px);
+                &_name{
+                    font-family: 'Alegreya', sans-serif;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: $darkwhite;
+                    margin-right: 139px;
+                    &-date{
+                    font-family: 'Alegreya', sans-serif;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                        &_stars{
+                            &-desc{
+                                color: $white;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
