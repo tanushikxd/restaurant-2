@@ -87,6 +87,7 @@ header {
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
+  display: block;
   padding: 130px 0 185px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,6 +501,7 @@ header {
   font-weight: 500px;
   line-height: 43px;
   color: #D9D9D9;
+  position: relative;
 }
 .contacts-wrapper_title::after {
   content: "";
@@ -507,7 +509,7 @@ header {
   height: 2px;
   background-color: #34C759;
   position: absolute;
-  right: 47%;
+  left: 10%;
   -webkit-transform: translateY(70px);
           transform: translateY(70px);
 }
@@ -519,6 +521,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-right: 155px;
   gap: 12px;
 }
@@ -588,6 +592,7 @@ header {
   border-radius: 100px;
   background-color: transparent;
   padding-left: 21px;
+  color: #FFFFFF;
 }
 .contacts-wrapper_title-details_email-telegram_tel-input_name-tel {
   width: 328px;
@@ -596,6 +601,7 @@ header {
   border-radius: 100px;
   background-color: transparent;
   padding-left: 21px;
+  color: #FFFFFF;
 }
 .contacts-wrapper_title-details_email-telegram_tel-input_name-tel_message-text {
   width: 686px;
@@ -604,6 +610,7 @@ header {
   background-color: transparent;
   border-radius: 20px;
   padding: 11px 0 0 21px;
+  color: #FFFFFF;
 }
 .contacts-wrapper_title-details_email-telegram_tel-input_name-tel_message-text_btn {
   padding: 9px 47px;
@@ -611,4 +618,8 @@ header {
   border-radius: 100px;
   color: #34C759;
   text-transform: uppercase;
+}
+.contacts-wrapper_title-details_email-telegram_tel-input_name-tel_message-text_btn:hover, .contacts-wrapper_title-details_email-telegram_tel-input_name-tel_message-text_btn:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }

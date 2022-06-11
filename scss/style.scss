@@ -46,6 +46,7 @@ header{
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
+    display: block;
     padding: 130px 0 185px 0;
     display: flex;
     flex-wrap: wrap;
@@ -391,19 +392,21 @@ header{
             margin-bottom: 82px;
             margin-left: 309px;
             @include header3;
+            position: relative;
             &::after{
                 content: '';
                 width: 60px;
                 height: 2px;
                 background-color: $green;
                 position: absolute;
-                right: 47%;
+                left: 10%;
                 transform: translateY(70px);
 
             }
             &-details{
                 display: flex;
                 flex-direction: column;
+                flex-wrap: wrap;
                 margin-right: 155px;
                 gap: 12px;
                 &_email{
@@ -462,6 +465,7 @@ header{
                                     border-radius: 100px;
                                     background-color: transparent;
                                     padding-left: 21px;
+                                    color: $white;
                                     &-tel{
                                     width: 328px;
                                     height: 32px;
@@ -469,6 +473,7 @@ header{
                                     border-radius: 100px;
                                     background-color: transparent;
                                     padding-left: 21px;
+                                    color: $white;
                                         &_message{
                                             
                                             &-text{
@@ -478,12 +483,16 @@ header{
                                             background-color: transparent;
                                             border-radius: 20px;
                                             padding: 11px 0 0 21px;
+                                            color: $white;
                                                 &_btn{
                                                     padding: 9px 47px;
                                                     border: 2px solid $green;
                                                     border-radius: 100px;
                                                     color: $green;
                                                     text-transform: uppercase;
+                                                    &:hover, &:focus{
+                                                        transform: scale(1.1);
+                                                    }
                                                 }
                                             }
                                         }
