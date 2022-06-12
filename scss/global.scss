@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Alegreya:wght@400;500;700&family=Montserrat:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+    background-color: #1A1A1A;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@mixin Header2() {
+    color: $green;
+    font-size: 36px;
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 600;
+    line-height: 43px;
+}
+@mixin header3() {
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 500px;
+    line-height: 43px;
+    color: $grayHeader;
+}
+@mixin sm-block() {
+    @media  screen and(max-width: 768px) {
+        @content;
+    }
+}
+@mixin medium-block() {
+    @media  screen and(max-width: 991px) {
+        @content;
+    }
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    &:focus, &:active{
+        outline: none;
+    }
+}
+.logo-link {
+    color: #34C759;
+    font-size: 24px;
+    font-family: "Alegreya" sans-serif;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
