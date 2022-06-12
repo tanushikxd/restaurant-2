@@ -505,4 +505,78 @@ header{
             }
         }
     }
+}.footer{
+    background-color:$bodydark ;
+    padding-top: 40px;
+    &-wrapper{
+        &_logo{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 18px;
+            &-link{
+                &_pic{
+                
+                }
+            }
+        }
+    }
+}
+.footer-nav{
+    border-bottom: 1px solid $cardsgray;
+    &_menu{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        margin-bottom: 18px;
+        &-list{
+            &_link{
+                color:$darkerwhite;
+                font-family: 'Montserrat' sans-serif;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+}
+.socials{
+    &-wrap{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            padding-top: 30px;
+            padding-bottom: 28px;
+        &_icons{
+            &-pic{
+            }
+        }
+    }
+}
+
+
+@include sm-block{
+    .header{
+        background-color: #2C2C2C;
+        height: 48px;
+    }
+    .nav{
+        &-items{
+            display: none;
+            &_item{
+                &-link{
+                }
+            }
+        }
+    }
+    
+    .header-wrapper_logo-link{
+        font-size: 18px;
+        line-height: 14px;
+    }
+    .header-wrapper_logo{
+        // padding: 15px 92px;
+    }
 }

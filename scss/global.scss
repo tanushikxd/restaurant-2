@@ -26,6 +26,16 @@ body{
     line-height: 43px;
     color: $grayHeader;
 }
+@mixin sm-block() {
+    @media  screen and(max-width: 768px) {
+        @content;
+    }
+}
+@mixin medium-block() {
+    @media  screen and(max-width: 991px) {
+        @content;
+    }
+}
 ul{
     list-style: none;
 }
